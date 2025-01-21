@@ -183,6 +183,7 @@
       "cell_type": "code",
       "source": [
         "lst = ['a','b',[4,10,11],['c',[1,66,['this']],2,111],'e',7]\n",
+        "\n",
         "answer = lst[3][1][2][0]\n",
         "\n",
         "print(answer)"
@@ -221,6 +222,7 @@
       "cell_type": "code",
       "source": [
         "d = {'k1':['val1','val2','val3',{'we':['need','to','go',{'deeper':[1,2,3,'that']}]}]}\n",
+        "\n",
         "answer = d['k1'][3]['we'][3]['deeper'][3]\n",
         "\n",
         "print(answer)\n"
@@ -255,12 +257,28 @@
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "answer = \"user@domain.com\".split(\"@\")[1]\n",
+        "\n",
+        "print(answer)"
+      ],
       "metadata": {
-        "id": "oK9GYWo7LiE0"
+        "id": "oK9GYWo7LiE0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0945e915-d509-4738-e4d5-1ac933fca846"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "domain.com\n"
+          ]
+        }
+      ]
     },
     {
       "cell_type": "markdown",
@@ -273,11 +291,15 @@
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "def findInternet(input_string):\n",
+        "\n",
+        "    return 'internet' in input_string.lower()"
+      ],
       "metadata": {
         "id": "a6YVax3wLit8"
       },
-      "execution_count": null,
+      "execution_count": 10,
       "outputs": []
     },
     {
@@ -291,12 +313,28 @@
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "answer = \"I don't know how to spell IoT ! Is it IoT or iot ? What does iot mean anyway?\".lower().count(\"iot\")\n",
+        "\n",
+        "print(answer)"
+      ],
       "metadata": {
-        "id": "WpiXr1LhLjBN"
+        "id": "WpiXr1LhLjBN",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8d314305-81b8-4162-b580-1ec2895073f5"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4\n"
+          ]
+        }
+      ]
     },
     {
       "cell_type": "markdown",
@@ -316,12 +354,33 @@
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "seq = ['data','salt' ,'dairy','cat', 'dog']\n",
+        "\n",
+        "result = list(filter(lambda word: word.startswith('d'), seq))\n",
+        "\n",
+        "result\n"
+      ],
       "metadata": {
-        "id": "CCU5G6uQLjzO"
+        "id": "CCU5G6uQLjzO",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "36c12860-0765-4269-e426-0819145a7677"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['data', 'dairy', 'dog']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
     },
     {
       "cell_type": "markdown",
@@ -341,12 +400,33 @@
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "seq = ['data','salt' ,'dairy','cat', 'dog']\n",
+        "\n",
+        "result = list(map(lambda word: word.upper(), seq))\n",
+        "\n",
+        "result\n"
+      ],
       "metadata": {
-        "id": "yF7YxT0QLkJ5"
+        "id": "yF7YxT0QLkJ5",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "22be3e7f-d188-41ae-ffc6-52650e027294"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['DATA', 'SALT', 'DAIRY', 'CAT', 'DOG']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
     },
     {
       "cell_type": "markdown",
